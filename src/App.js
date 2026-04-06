@@ -4,6 +4,10 @@ import Home from './pages/Home';
 import ProjectDetail from './pages/ProjectDetail';
 import EducationDetail from './pages/EducationDetail';
 import Landing from './pages/Landing';
+import BlogList from './pages/BlogList';
+import BlogDetail from './pages/BlogDetail';
+import BlogCreate from './pages/BlogCreate';
+import BlogManage from './pages/BlogManage';
 
 function App() {
   return (
@@ -49,6 +53,11 @@ function AppContent() {
         <Route path="/portfolio" element={<Home />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
         <Route path="/education/:id" element={<EducationDetail />} />
+        <Route path="/blogs" element={<BlogList />} />
+        <Route path="/blogs/:id" element={<BlogDetail />} />
+        <Route path="/blogs/create" element={<BlogCreate />} />
+        <Route path="/blogs/create/:id" element={<BlogCreate />} />
+        <Route path="/blogs/manage" element={<BlogManage />} />
         <Route path="*" element={<Landing />} />
       </Routes>
 

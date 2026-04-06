@@ -10,9 +10,9 @@ function Landing() {
         <Link to="/portfolio">
           <button className="landing-button">Portfolio</button>
         </Link>
-        <a href="https://blog.gabrieldevaraj.in" target="_blank" rel="noopener noreferrer">
+        <Link to="/blogs">
           <button className="landing-button">Blog</button>
-        </a>
+        </Link>
       </div>
     </div>
   );
