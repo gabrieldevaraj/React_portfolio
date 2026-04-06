@@ -31,16 +31,19 @@ function App() {
           </div>
         </div>
 
+        <div className="App">
         <Routes>
-          <div className="App">
             <Route path="/" element={<Home />} />
             <Route path="/projects/:id" element={<ProjectDetail />} />
             <Route path="/education/:id" element={<EducationDetail />} />
             <Route path="*" element={<Home />} />
-          </div>
         </Routes>
+        </div>
 
         <footer className="footer">
+          <a href={process.env.PUBLIC_URL + '/home.html'} target="_blank" rel="noopener noreferrer">
+            Go to my static page
+          </a>
           <p>© {new Date().getFullYear()} Gabriel Devaraj. Crafted with React.</p>
         </footer>
       </div>

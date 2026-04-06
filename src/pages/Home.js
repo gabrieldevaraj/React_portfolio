@@ -39,7 +39,7 @@ export default function Home() {
         <div className="two-col">
           <div>
             <p>
-              I’m a software engineer with 3+ years of experience building scalable
+              I’m a software engineer with 4.5+ years of experience building scalable
               digital products. I specialize in web applications, API architecture,
               and clean user interfaces.
             </p>
