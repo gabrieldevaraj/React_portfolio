@@ -3,51 +3,62 @@ import { HashRouter as BrowserRouter, Routes, Route, Link, useLocation } from 'r
 import Home from './pages/Home';
 import ProjectDetail from './pages/ProjectDetail';
 import EducationDetail from './pages/EducationDetail';
+import Landing from './pages/Landing';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <AppContent />
+    </BrowserRouter>
+  );
+}
+
+function AppContent() {
+  const location = useLocation();
+  const showNavbar = location.pathname !== '/';
+
+  return (
+    <div className="App">
+      {showNavbar && (
         <div className="navbar">
-          <Link to="/" state={{ scrollTo: 'home' }}>
+          <Link to="/portfolio" state={{ scrollTo: 'home' }}>
           <h1>Gabriel Devaraj</h1>
           </Link>
           <div>
-            <Link className="navlink" to="/" state={{ scrollTo: 'home' }}>
+            <Link className="navlink" to="/portfolio" state={{ scrollTo: 'home' }}>
               Home
             </Link>
-            <Link className="navlink" to="/" state={{ scrollTo: 'about' }}>
+            <Link className="navlink" to="/portfolio" state={{ scrollTo: 'about' }}>
               About
             </Link>
-            <Link className="navlink" to="/" state={{ scrollTo: 'projects' }}>
+            <Link className="navlink" to="/portfolio" state={{ scrollTo: 'projects' }}>
               Projects
             </Link>
-            <Link className="navlink" to="/" state={{ scrollTo: 'education' }}>
+            <Link className="navlink" to="/portfolio" state={{ scrollTo: 'education' }}>
               Education
             </Link>
-            <Link className="navlink" to="/" state={{ scrollTo: 'contact' }}>
+            <Link className="navlink" to="/portfolio" state={{ scrollTo: 'contact' }}>
               Contact
             </Link>
           </div>
         </div>
+      )}
 
-        <div className="App">
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects/:id" element={<ProjectDetail />} />
-            <Route path="/education/:id" element={<EducationDetail />} />
-            <Route path="*" element={<Home />} />
-        </Routes>
-        </div>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/portfolio" element={<Home />} />
+        <Route path="/projects/:id" element={<ProjectDetail />} />
+        <Route path="/education/:id" element={<EducationDetail />} />
+        <Route path="*" element={<Landing />} />
+      </Routes>
 
-        <footer className="footer">
-          <a href={process.env.PUBLIC_URL + '/home.html'} target="_blank" rel="noopener noreferrer">
-            Go to my static page
-          </a>
-          <p>© {new Date().getFullYear()} Gabriel Devaraj. Crafted with React.</p>
-        </footer>
-      </div>
-    </BrowserRouter>
+      <footer className="footer">
+        <a href={process.env.PUBLIC_URL + '/home.html'} target="_blank" rel="noopener noreferrer">
+          Go to my static page
+        </a>
+        <p>© {new Date().getFullYear()} Gabriel Devaraj. Crafted with React.</p>
+      </footer>
+    </div>
   );
 }
 

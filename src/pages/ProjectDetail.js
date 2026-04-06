@@ -10,7 +10,7 @@ export default function ProjectDetail() {
       <section className="section">
         <h3>Project Not Found</h3>
         <p>Try another project from the home page.</p>
-        <Link className="btn" to="/" state={{ scrollTo: 'projects' }}>Back to home</Link>
+        <Link className="btn" to="/portfolio" state={{ scrollTo: 'projects' }}>Back to home</Link>
       </section>
     );
   }
@@ -25,7 +25,7 @@ export default function ProjectDetail() {
           <li key={item}>{item}</li>
         ))}
       </ul>
-      <Link className="btn" to="/" state={{ scrollTo: 'projects' }}>Back to home</Link>
+      <Link className="btn" to="/portfolio" state={{ scrollTo: 'projects' }}>Back to home</Link>
     </section>
   );
 }

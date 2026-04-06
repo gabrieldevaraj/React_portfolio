@@ -10,7 +10,7 @@ export default function EducationDetail() {
       <section className="section">
         <h3>Education Record Not Found</h3>
         <p>Return home and pick another entry.</p>
-        <Link className="btn" to="/">Back to home</Link>
+        <Link className="btn" to="/portfolio" state={{ scrollTo: 'education' }}>Back to home</Link>
       </section>
     );
   }
@@ -21,7 +21,7 @@ export default function EducationDetail() {
       <p>{record.school}</p>
       <p>{record.year}</p>
       <p>{record.details}</p>
-      <Link className="btn" to="/">Back to home</Link>
+      <Link className="btn" to="/portfolio" state={{ scrollTo: 'education' }}>Back to home</Link>
     </section>
   );
 }

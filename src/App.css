@@ -314,3 +314,42 @@ body {
     justify-content: space-around;
   }
 }
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.landing h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.button-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.landing-button {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: var(--text);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.landing-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(168, 85, 247, 0.4);
+}
