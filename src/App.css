@@ -354,6 +354,24 @@ body {
   box-shadow: 0 8px 20px rgba(168, 85, 247, 0.4);
 }
 
+.blogs-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blogs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blog-item {
+  background: rgba(30, 41, 59, 0.9);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
 .blog-list, .blog-detail, .blog-create, .blog-manage {
   padding: 2rem;
   max-width: 800px;

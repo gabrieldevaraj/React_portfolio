@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import '../App.css';
 
 function BlogCreate() {
   const { id } = useParams();
+  const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const [blog, setBlog] = useState({ title: '', content: '', images: [], tags: [] });
 
@@ -12,8 +13,11 @@ function BlogCreate() {
       const storedBlogs = JSON.parse(localStorage.getItem('blogs') || '[]');
       const foundBlog = storedBlogs.find(b => b.id === parseInt(id));
       if (foundBlog) setBlog(foundBlog);
+    } else {
+      const tag = searchParams.get('tag');
+      if (tag) setBlog(prev => ({ ...prev, tags: [tag] }));
     }
-  }, [id]);
+  }, [id, searchParams]);
 
   const handleSubmit = (e) => {
     e.preventDefault();

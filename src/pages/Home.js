@@ -90,7 +90,7 @@ export default function Home() {
       <section className="section" id="projects">
         <h3>Featured Projects</h3>
         <div className="grid">
-          {projects.map((project) => (
+          {projects.filter(project => project.showInPortfolio).map((project) => (
             <article key={project.id} className="card project-card">
               <Link className="" to={`/projects/${project.id}`}><h4>{project.title}</h4>
               <p>{project.summary}</p>

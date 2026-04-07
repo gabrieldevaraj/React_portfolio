@@ -11,7 +11,7 @@ function Landing() {
           <button className="landing-button">Portfolio</button>
         </Link>
         <Link to="/blogs">
-          <button className="landing-button">Blog</button>
+          <button className="landing-button">Blogs</button>
         </Link>
       </div>
     </div>
