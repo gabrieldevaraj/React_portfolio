@@ -24,12 +24,12 @@ export default function Home() {
             web apps with elegant UX.
           </p>
           <div className="hero-actions">
-            <a className="btn secondary" href="#contact">
+            <Link className="navlink" to="/portfolio" state={{ scrollTo: 'contact' }}>
               Contact Me
-            </a>
-            <a className="btn secondary" href="#projects">
+            </Link>
+            <Link className="navlink" to="/portfolio" state={{ scrollTo: 'projects' }}>
               View Work
-            </a>
+            </Link>
           </div>
         </div>
       </section>

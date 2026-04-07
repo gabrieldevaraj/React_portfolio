@@ -16,7 +16,7 @@ function App() {
 
 function AppContent() {
   const location = useLocation();
-  const showNavbar = location.pathname !== '/';
+  const showNavbar = location.pathname !== '/' && location.pathname !== '/blogs';
 
   return (
     <div className="App">
@@ -55,9 +55,15 @@ function AppContent() {
       </Routes>
 
       <footer className="footer">
-        <a href={process.env.PUBLIC_URL + '/home.html'} target="_blank" rel="noopener noreferrer">
-          Go to my static page
+        <a  className="navlink" href={process.env.PUBLIC_URL + '/home.html'} target="_blank" rel="noopener noreferrer">
+          Static page
         </a>
+        <Link className="navlink" to="/portfolio" state={{ scrollTo: 'home' }}>
+              Portfolio
+            </Link>
+        <Link className="navlink" to="/blogs" state={{ scrollTo: 'scroll' }}>
+              Blogs
+            </Link>
         <p>© {new Date().getFullYear()} Gabriel Devaraj. Crafted with React.</p>
       </footer>
     </div>
