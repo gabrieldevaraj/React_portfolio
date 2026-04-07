@@ -33,17 +33,17 @@ export const projects = [
 
 export const education = [
   {
-    id: 'bsc-cs',
-    school: 'University of Tech Insights',
-    year: '2019 - 2023',
-    degree: 'B.Sc. Computer Science',
-    details: 'Specialization in Web Development and Data Structures. Final project: Real-time collaboration application.'
+    id: 'B-Tech',
+    school: 'Karunya Institute of Technology and Sciences',
+    year: '2017 - 2021',
+    degree: 'B.Tech in Electronics and Communication Engineering',
+    details: ''
   },
   {
-    id: 'cert-fullstack',
-    school: 'CodeForge Academy',
-    year: '2024',
-    degree: 'Full Stack Web Developer Bootcamp',
-    details: 'Completed intensive 16-week program covering React, Node, Express, PostgreSQL, and CI/CD best practices.'
+    id: 'MBA',
+    school: 'Alagappa University',
+    year: '2024-2026',
+    degree: 'MBA in International Business',
+    details: ''
   }
 ];

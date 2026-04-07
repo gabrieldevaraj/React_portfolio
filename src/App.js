@@ -1,10 +1,13 @@
 import './App.css';
 import { HashRouter as BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
-import ProjectDetail from './pages/ProjectDetail';
-import EducationDetail from './pages/EducationDetail';
 import Landing from './pages/Landing';
 import Blogs from './pages/Blogs';
+import SpaceTravelDetail from './pages/SpaceTravelDetail';
+import FintrackDetail from './pages/FintrackDetail';
+import PortfolioDetail from './pages/PortfolioDetail';
+import BTechDetail from './pages/BTechDetail';
+import MBADetail from './pages/MBADetail';
 
 function App() {
   return (
@@ -49,8 +52,11 @@ function AppContent() {
         <Route path="/" element={<Landing />} />
         <Route path="/portfolio" element={<Home />} />
         <Route path="/blogs" element={<Blogs />} />
-        <Route path="/projects/:id" element={<ProjectDetail />} />
-        <Route path="/education/:id" element={<EducationDetail />} />
+        <Route path="/projects/spacetravel" element={<SpaceTravelDetail />} />
+        <Route path="/projects/fintrack" element={<FintrackDetail />} />
+        <Route path="/projects/portfolio" element={<PortfolioDetail />} />
+        <Route path="/education/B-Tech" element={<BTechDetail />} />
+        <Route path="/education/MBA" element={<MBADetail />} />
         <Route path="*" element={<Landing />} />
       </Routes>
 

@@ -39,22 +39,19 @@ export default function Home() {
         <div className="two-col">
           <div>
             <p>
-              I’m a software engineer with 4.5+ years of experience building scalable
-              digital products. I specialize in web applications, API architecture,
-              and clean user interfaces.
+              I’m a Full Stack Developer with over 4 years of experience building scalable digital products. I specialize in crafting robust Java backends and connecting them to dynamic, responsive React user interfaces.
             </p>
             <p>
-              My goal is to design accessible and maintainable code while delivering
-              delightful user experiences.
+              My primary goal is to write accessible, maintainable code that translates into seamless and delightful user experiences.
             </p>
           </div>
           <div className="metrics">
             <div className="metric-card">
-              <strong>30+</strong>
+              <strong>10+</strong>
               <span>Projects delivered</span>
             </div>
             <div className="metric-card">
-              <strong>3+</strong>
+              <strong>4+</strong>
               <span>Years of experience</span>
             </div>
             <div className="metric-card">
@@ -69,19 +66,23 @@ export default function Home() {
         <h3>Skills</h3>
         <div className="skill-grid">
           <article className="skill">
-            <h4>React</h4>
+            <h4>Java</h4>
             <div className="bar fill-90" />
           </article>
           <article className="skill">
-            <h4>Node.js</h4>
+            <h4>React</h4>
             <div className="bar fill-85" />
           </article>
           <article className="skill">
-            <h4>TypeScript</h4>
+            <h4>Javascript</h4>
             <div className="bar fill-80" />
           </article>
           <article className="skill">
-            <h4>UI/UX</h4>
+            <h4>CSS</h4>
+            <div className="bar fill-75" />
+          </article>
+          <article className="skill">
+            <h4>Github</h4>
             <div className="bar fill-75" />
           </article>
         </div>
@@ -131,20 +132,20 @@ export default function Home() {
           <div>
             <p>Reach out for collaborations, full-time opportunities, or freelance work.</p>
             <p>
-              Email: <a href="mailto:gabriel@example.com">gabriel@example.com</a>
+              Email: <a target="_blank" rel="noopener noreferrer" href="mailto:gabrieldevarajv@gmail.com">gabrieldevarajv@gmail.com</a>
             </p>
             <p>
-              LinkedIn: <a href="https://linkedin.com/in/gabriel">linkedin.com/in/gabriel</a>
+              LinkedIn: <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabriel-devaraj/">LinkedIn</a>
             </p>
           </div>
-          <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+          {/* <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
             <input placeholder="Your Name" required />
             <input type="email" placeholder="Your Email" required />
             <textarea placeholder="Your Message" rows="4" required />
             <button type="submit" className="btn">
               Send message
             </button>
-          </form>
+          </form> */}
         </div>
       </section>
     </main>
