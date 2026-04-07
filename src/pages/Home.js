@@ -114,14 +114,15 @@ export default function Home() {
         <h3>Education</h3>
         <div className="grid">
           {education.map((record) => (
-            <Link className="" to={`/education/${record.id}`}><article key={record.id} className="card">
+            <article key={record.id} className="card">
+              <Link className="" to={`/education/${record.id}`}>
               <h4>{record.degree}</h4>
               <p>{record.school}</p>
               <small>{record.year}</small>
               {/* <Link className="btn" to={`/education/${record.id}`}>
                 Read more
               </Link> */}
-            </article></Link>
+            </Link></article>
           ))}
         </div>
       </section>
