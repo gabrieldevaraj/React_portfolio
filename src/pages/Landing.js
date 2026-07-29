@@ -7,11 +7,11 @@ function Landing() {
     <div className="landing">
       <h1>Welcome to Gabriel Devaraj's Site</h1>
       <div className="button-container">
-        <Link to="/portfolio">
-          <button className="landing-button">Portfolio</button>
+        <Link to="/portfolio" className="landing-button">
+          Portfolio
         </Link>
-        <Link to="/blogs">
-          <button className="landing-button">Blogs</button>
+        <Link to="/blogs" className="landing-button">
+          Blogs
         </Link>
       </div>
     </div>

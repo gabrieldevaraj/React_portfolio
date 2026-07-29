@@ -618,6 +618,7 @@ body {
 
 .blog-card-link {
   text-decoration: none;
+  display: block;
 }
 
 .blogs-list.grid-view {
