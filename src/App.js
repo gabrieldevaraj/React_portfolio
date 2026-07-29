@@ -3,9 +3,9 @@ import { HashRouter as BrowserRouter, Routes, Route, Link, useLocation } from 'r
 import Home from './pages/Home';
 import Landing from './pages/Landing';
 import Blogs from './pages/Blogs';
-import SpaceTravelDetail from './pages/SpaceTravelDetail';
-import FintrackDetail from './pages/FintrackDetail';
-import PortfolioDetail from './pages/PortfolioDetail';
+import ChurchERPDetail from './pages/ChurchERPDetail';
+import PowerSchoolAIDetail from './pages/PowerSchoolAIDetail';
+import AccentureDetail from './pages/AccentureDetail';
 import BTechDetail from './pages/BTechDetail';
 import MBADetail from './pages/MBADetail';
 
@@ -52,9 +52,15 @@ function AppContent() {
         <Route path="/" element={<Landing />} />
         <Route path="/portfolio" element={<Home />} />
         <Route path="/blogs" element={<Blogs />} />
-        <Route path="/projects/spacetravel" element={<SpaceTravelDetail />} />
-        <Route path="/projects/fintrack" element={<FintrackDetail />} />
-        <Route path="/projects/portfolio" element={<PortfolioDetail />} />
+        <Route path="/projects/church-erp" element={<ChurchERPDetail />} />
+        <Route path="/projects/powerschool-ai" element={<PowerSchoolAIDetail />} />
+        <Route path="/projects/lenovo-platform" element={<AccentureDetail />} />
+        
+        {/* We can route experience to these as well or use generic ProjectDetail if needed, but we linked experience differently. */}
+        {/* Let's route experience to the project detail since they overlap in narrative, or create dedicated if needed. Actually Home.js has <Link to={`/experience/${record.id}`}> */}
+        <Route path="/experience/powerschool" element={<PowerSchoolAIDetail />} />
+        <Route path="/experience/accenture" element={<AccentureDetail />} />
+
         <Route path="/education/B-Tech" element={<BTechDetail />} />
         <Route path="/education/MBA" element={<MBADetail />} />
         <Route path="*" element={<Landing />} />

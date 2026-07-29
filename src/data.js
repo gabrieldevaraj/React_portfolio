@@ -1,32 +1,49 @@
+export const experience = [
+  {
+    id: 'powerschool',
+    role: 'Software Engineer & AI Innovation Lead',
+    company: 'PowerSchool',
+    duration: 'March 2024 - Present',
+    details: 'Spearheaded AI initiatives to automate DevEx workflows and built a multi-agent orchestrator using LLMs.'
+  },
+  {
+    id: 'accenture',
+    role: 'Application Development Associate',
+    company: 'Accenture',
+    duration: 'June 2021 - March 2024',
+    details: 'Led Liferay projects for Lenovo Global Seller Platform. Promoted rapidly for driving significant client value.'
+  }
+];
+
 export const projects = [
   {
-    id: 'spacetravel',
-    title: 'Space Travel Booking Web App',
-    summary: 'A responsive site that lets users search and book space tours.',
-    tech: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB'],
-    details: 'Built with a mobile-first design. Auth, dynamic pricing, and bookings persisted in MongoDB. Includes admin panel for managing trip schedules.',
-    date: '2023-05-15',
+    id: 'church-erp',
+    title: 'Multi-Tenant Church ERP',
+    summary: 'Enterprise Resource Planning & Financial Portal with multi-tenant architecture and double-entry accounting.',
+    tech: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'Google Cloud Run'],
+    details: 'A multi-tenant SaaS application serving dioceses and local churches with strict data isolation. Features 6-tier hierarchical RBAC, dynamic subdomain binding, and automated WhatsApp integrations. Handled massive scaling challenges, security compliance, and financial accuracy.',
+    date: '2024',
     showInPortfolio: true,
     showInBlog: true
   },
   {
-    id: 'fintrack',
-    title: 'Personal Finance Tracker',
-    summary: 'Visualizes budgets, recurring expenses, and savings goals.',
-    tech: ['React', 'Chart.js', 'TypeScript', 'Firebase'],
-    details: 'Users can categorize transactions, see analytics charts, and set monthly saving targets. Realtime updates with Firestore.',
-    date: '2023-08-20',
+    id: 'powerschool-ai',
+    title: 'Autonomous AI Orchestrator',
+    summary: 'A Multi-Agent system automating SDLC for engineering teams.',
+    tech: ['Python', 'OpenAI API', 'N8N', 'GitHub Copilot Enterprise'],
+    details: 'Designed and deployed a Production-Grade Multi-Agent System within a legacy enterprise environment. Features a Supervisor Agent connected to Jira that delegates tasks to sub-agents, writes code, and enforces standards via a Human-in-the-Loop mechanism.',
+    date: '2024',
     showInPortfolio: true,
-    showInBlog: false
+    showInBlog: true
   },
   {
-    id: 'portfolio',
-    title: 'Dynamic Portfolio Site',
-    summary: 'A portfolio engine with CMS-style content updates and dark mode.',
-    tech: ['React', 'React Router', 'Context API', 'LocalStorage'],
-    details: 'Content is configured from JSON. Includes filters for skills and project tags, plus accessible keyboard navigation.',
-    date: '2024-01-10',
-    showInPortfolio: false,
+    id: 'lenovo-platform',
+    title: 'Lenovo Global Seller Platform',
+    summary: 'Enterprise workflow management and compliance for global ecommerce.',
+    tech: ['Java', 'Liferay', 'Javascript', 'HTML', 'CSS'],
+    details: 'Developed and maintained the Lenovo Global Seller Platform across multiple regions. Overhauled legacy requirements, executed massive refactoring, and drastically improved code reviews and deployment velocity.',
+    date: '2021-2024',
+    showInPortfolio: true,
     showInBlog: true
   }
 ];
@@ -37,13 +54,13 @@ export const education = [
     school: 'Karunya Institute of Technology and Sciences',
     year: '2017 - 2021',
     degree: 'B.Tech in Electronics and Communication Engineering',
-    details: ''
+    details: 'Graduated with strong technical foundation.'
   },
   {
     id: 'MBA',
     school: 'Alagappa University',
-    year: '2024-2026',
+    year: '2024 - 2026',
     degree: 'MBA in International Business',
-    details: ''
+    details: 'Completed with First Class. Bridged technical execution with global business strategy and product management.'
   }
 ];
